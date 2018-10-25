@@ -1,12 +1,30 @@
 {
   "name": "react-use-localstorage",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d dist",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "localStorage",
+    "react",
+    "hooks"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0-0"
+  },
+  "author": "Sung Kim <sungmkim80@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dance2die/react-use-localstorage.git"
+  },
+  "homepage": "https://github.com/dance2die/react-use-localstorage"
 }
