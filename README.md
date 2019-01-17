@@ -1,5 +1,9 @@
 # react-use-localstorage
 
+![version](https://img.shields.io/npm/v/react-use-localstorage.svg?style=flat-square)
+![size](https://img.shields.io/bundlephobia/min/react-use-localstorage.svg?style=flat-square)
+![minzippedsize](https://img.shields.io/bundlephobia/minzip/react-use-localstorage.svg?style=flat-square)
+
 Access [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) using [React hooks](https://reactjs.org/docs/hooks-intro.html).
 
 Fork it on CodeSandbox  
@@ -43,3 +47,9 @@ ReactDOM.render(<App />, rootElement);
 # Demo
 
 ![demo](react-use-localstorage.gif)
+
+# Change Log
+
+^0.0.6
+- Changed the language from JavaScript to TypeScript
+- It has minimized the distribution file greatly
