@@ -13,10 +13,10 @@
     "hooks"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@types/react": "^16.7.20",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@types/react": "^16.8.2",
     "babel-preset-minify": "^0.5.0",
     "react": "^16.8.0"
   },
