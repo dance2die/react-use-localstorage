@@ -21,7 +21,7 @@
     "react": "^16.8.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0-alpha.1"
+    "react": "^16.8.0"
   },
   "author": "Sung Kim <sungmkim80@gmail.com>",
   "license": "MIT",

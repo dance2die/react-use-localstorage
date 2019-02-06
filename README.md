@@ -1,5 +1,7 @@
 # react-use-localstorage
 
+_depends on stable v16.8.0~_
+
 ![version](https://img.shields.io/npm/v/react-use-localstorage.svg?style=flat-square)
 ![size](https://img.shields.io/bundlephobia/min/react-use-localstorage.svg?style=flat-square)
 ![minzippedsize](https://img.shields.io/bundlephobia/minzip/react-use-localstorage.svg?style=flat-square)
