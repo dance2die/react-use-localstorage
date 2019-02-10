@@ -34,7 +34,7 @@ function App() {
             type="text"
             placeholder="Enter your name"
             value={item}
-            onChange={e => setItem("name", e.target.value)}
+            onChange={e => setItem(e.target.value)}
           />
         </label>
       </div>
@@ -52,6 +52,18 @@ ReactDOM.render(<App />, rootElement);
 
 # Change Log
 
-^0.0.6
+2.0.0
+- Breaking change - `setItem` doesn't require `key`
+
+1.1.1
+- Updated to React v16.8.1, which contains the patched Hooks
+
+1.1.0
+- Updated dev dependency version
+
+1.0.0  
+- Updated to React v16.8.0, which contains the stable Hooks
+
+0.0.6
 - Changed the language from JavaScript to TypeScript
 - It has minimized the distribution file greatly
