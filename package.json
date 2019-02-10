@@ -1,6 +1,6 @@
 {
   "name": "react-use-localstorage",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Use Local Storage with React hooks",
   "main": "dist/index.js",
   "scripts": {
