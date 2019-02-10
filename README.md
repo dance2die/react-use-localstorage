@@ -52,6 +52,9 @@ ReactDOM.render(<App />, rootElement);
 
 # Change Log
 
+2.2.0
+- Sets initial value in local storage
+
 2.1.0
 - Can optionally pass an initial value
 - This is to prevent form field from being uncontrolled.
