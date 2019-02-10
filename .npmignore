@@ -1,5 +1,6 @@
-src
-temp
-.babelrc
-.gitignore
-react-use-localstorage.gif
+/.*
+/*.gif
+/tsconfig.json
+/tslint.json
+/*.lock
+/src
