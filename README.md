@@ -49,7 +49,7 @@ ReactDOM.render(<App />, rootElement);
 
 # Demo
 
-![demo](react-use-localstorage.gif)
+![demo](https://github.com/dance2die/react-use-localstorage/raw/master/react-use-localstorage.gif)
 
 # Changelog
 
