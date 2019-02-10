@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Dispatch } from 'react';
 
 export default function useLocalStorage(
   key: string,
   initialValue: string = ''
-) {
+): [string, Dispatch<string>] {
   const [item, setValue] = React.useState(() => {
     const value = localStorage.getItem(key) || initialValue;
     localStorage.setItem(key, value);
