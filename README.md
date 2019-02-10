@@ -1,5 +1,5 @@
 # react-use-localstorage
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
 _depends on stable v16.8.0~_
 
@@ -84,8 +84,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/3036779?v=4" width="100px;" alt="Aaron Roberts"/><br /><sub><b>Aaron Roberts</b></sub>](https://github.com/lilasquared)<br />[🤔](#ideas-lilasquared "Ideas, Planning, & Feedback") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Alilasquared "Bug reports") [💻](https://github.com/dance2die/react-use-localstorage/commits?author=lilasquared "Code") | [<img src="https://avatars1.githubusercontent.com/u/8465237?v=4" width="100px;" alt="Sung Kim"/><br /><sub><b>Sung Kim</b></sub>](https://twitter.com/dance2die)<br />[💻](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Code") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Adance2die "Bug reports") [📖](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Documentation") |
-| :---: | :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/3036779?v=4" width="100px;" alt="Aaron Roberts"/><br /><sub><b>Aaron Roberts</b></sub>](https://github.com/lilasquared)<br />[🤔](#ideas-lilasquared "Ideas, Planning, & Feedback") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Alilasquared "Bug reports") [💻](https://github.com/dance2die/react-use-localstorage/commits?author=lilasquared "Code") | [<img src="https://avatars1.githubusercontent.com/u/8465237?v=4" width="100px;" alt="Sung Kim"/><br /><sub><b>Sung Kim</b></sub>](https://twitter.com/dance2die)<br />[💻](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Code") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Adance2die "Bug reports") [📖](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/2192274?v=4" width="100px;" alt="TheAifam5"/><br /><sub><b>TheAifam5</b></sub>](https://theaifam5.eu/)<br />[🤔](#ideas-TheAifam5 "Ideas, Planning, & Feedback") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
