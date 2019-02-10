@@ -22,7 +22,7 @@ import useLocalStorage from "react-use-localstorage";
 import "./styles.css";
 
 function App() {
-  const [item, setItem] = useLocalStorage("name");
+  const [item, setItem] = useLocalStorage("name", "Initial Value");
 
   return (
     <div className="App">
@@ -51,6 +51,10 @@ ReactDOM.render(<App />, rootElement);
 ![demo](react-use-localstorage.gif)
 
 # Change Log
+
+2.1.0
+- Can optionally pass an initial value
+- This is to prevent form field from being uncontrolled.
 
 2.0.0
 - Breaking change - `setItem` doesn't require `key`
