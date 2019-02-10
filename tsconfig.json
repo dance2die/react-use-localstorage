@@ -3,13 +3,12 @@
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
-    "declarationDir": "dist",
-    "declarationMap": true,
-    "outDir": "temp",
+    "declarationDir": "lib",
+    "outDir": "lib",
     "rootDir": "src",
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true
   },
   "compileOnSave": false,
   "buildOnSave": false
