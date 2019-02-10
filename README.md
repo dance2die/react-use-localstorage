@@ -13,7 +13,7 @@ Access [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/l
 Fork it on CodeSandbox
 [![Edit usestate-useeffect](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/09xj95vxl)
 
-# How to use it
+## How to use it
 
 ```javascript
 import React from 'react';
@@ -47,11 +47,11 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
 ```
 
-# Demo
+## Demo
 
 ![demo](https://github.com/dance2die/react-use-localstorage/raw/master/react-use-localstorage.gif)
 
-# Changelog
+## Changelog
 
 <details>
 <summary><b>Expand Changelog</b></summary>
