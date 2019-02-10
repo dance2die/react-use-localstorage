@@ -53,6 +53,9 @@ ReactDOM.render(<App />, rootElement);
 
 # Change Log
 
+2.2.2
+- Fixed a bug where initial value is returned all the time #7 by @lilasquared 🙏
+
 2.2.0
 - Sets initial value in local storage
 
