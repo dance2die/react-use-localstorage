@@ -56,6 +56,9 @@ ReactDOM.render(<App />, rootElement);
 <details>
 <summary><b>Expand Changelog</b></summary>
 
+2.4.1
+- Added `useLocalStorage` return type explicitly to generate correct `index.d.ts` typing file.
+
 2.4.0
 - Added TypeScript typings as suggested by @TheAifam5 in Issue #9
 
