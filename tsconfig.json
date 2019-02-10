@@ -3,6 +3,8 @@
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
+    "declarationDir": "dist",
+    "declarationMap": true,
     "outDir": "temp",
     "rootDir": "src",
     "strict": true,
