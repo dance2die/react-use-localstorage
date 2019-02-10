@@ -34,7 +34,7 @@ function App() {
             type="text"
             placeholder="Enter your name"
             value={item}
-            onChange={e => setItem("name", e.target.value)}
+            onChange={e => setItem(e.target.value)}
           />
         </label>
       </div>
