@@ -1,7 +1,7 @@
 # react-use-localstorage
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 
-_depends on stable v16.8.0~_
+_depends on stable v16.8.1~_
 
 ![version](https://img.shields.io/npm/v/react-use-localstorage.svg?style=flat-square)
 ![size](https://img.shields.io/bundlephobia/min/react-use-localstorage.svg?style=flat-square)
@@ -51,9 +51,15 @@ ReactDOM.render(<App />, rootElement);
 
 ![demo](react-use-localstorage.gif)
 
-# Change Log
+# Changelog
 
-2.2.2
+<details>
+<summary><b>Expand Changelog</b></summary>
+
+2.4.0
+- Added TypeScript typings as suggested by @TheAifam5 in Issue #9
+
+2.3.0
 - Fixed a bug where initial value is returned all the time #7 by @lilasquared 🙏
 
 2.2.0
@@ -78,6 +84,8 @@ ReactDOM.render(<App />, rootElement);
 0.0.6
 - Changed the language from JavaScript to TypeScript
 - It has minimized the distribution file greatly
+</details>
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/all-contributors/all-contributors#emoji-key)):
