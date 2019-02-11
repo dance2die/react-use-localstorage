@@ -37,7 +37,9 @@
       "avatar_url": "https://avatars3.githubusercontent.com/u/2192274?v=4",
       "profile": "https://theaifam5.eu/",
       "contributions": [
-        "ideas"
+        "ideas",
+        "code",
+        "infra"
       ]
     }
   ],
