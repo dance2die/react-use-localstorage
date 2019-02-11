@@ -56,7 +56,20 @@ ReactDOM.render(<App />, rootElement);
 <details>
 <summary><b>Expand Changelog</b></summary>
 
-2.4.1
+3.0.0
+
+Decided to go with @TheAifam5 the following breaking change as the type is derived from React type definition.
+
+- Breadking change: `setIteme` type is changed from `(item: string) => void` () to `React.Dispatch<string>`
+- Updated infrastructure by @TheAifam5 🙏 in [PR #13](https://github.com/dance2die/react-use-localstorage/pull/13)
+
+  - Dropped babel in favor of `tsc` + `uglifyjs`
+  - Replaced npm with yarn
+  - Added husky for pre-commit git hooks
+  - Source map has been dropped from distribution
+  - distribution is moved from `dist` to `lib` folder
+
+  2.4.1
 
 - Added `useLocalStorage` return type explicitly to generate correct `index.d.ts` typing file.
 
@@ -107,6 +120,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 <!-- prettier-ignore -->
 | [<img src="https://avatars3.githubusercontent.com/u/3036779?v=4" width="100px;" alt="Aaron Roberts"/><br /><sub><b>Aaron Roberts</b></sub>](https://github.com/lilasquared)<br />[🤔](#ideas-lilasquared "Ideas, Planning, & Feedback") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Alilasquared "Bug reports") [💻](https://github.com/dance2die/react-use-localstorage/commits?author=lilasquared "Code") | [<img src="https://avatars1.githubusercontent.com/u/8465237?v=4" width="100px;" alt="Sung Kim"/><br /><sub><b>Sung Kim</b></sub>](https://twitter.com/dance2die)<br />[💻](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Code") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Adance2die "Bug reports") [📖](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/2192274?v=4" width="100px;" alt="TheAifam5"/><br /><sub><b>TheAifam5</b></sub>](https://theaifam5.eu/)<br />[🤔](#ideas-TheAifam5 "Ideas, Planning, & Feedback") [💻](https://github.com/dance2die/react-use-localstorage/commits?author=TheAifam5 "Code") [🚇](#infra-TheAifam5 "Infrastructure (Hosting, Build-Tools, etc)") |
 | :---: | :---: | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

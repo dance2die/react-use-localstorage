@@ -55,5 +55,16 @@
       "prettier-tslint fix",
       "git add"
     ]
-  }
+  },
+  "contributors": [
+    {
+      "name": "lilasquared",
+      "email": "aaronmroberts1@gmail.com"
+    },
+    {
+      "name": "TheAifam5",
+      "email": "theaifam5@gmail.com",
+      "url": "https://theaifam5.eu/"
+    }
+  ]
 }
