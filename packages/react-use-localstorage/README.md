@@ -10,8 +10,12 @@ _depends on stable v16.8.1~_
 
 Access [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) using [React hooks](https://reactjs.org/docs/hooks-intro.html).
 
-Fork it on CodeSandbox
+Fork it on CodeSandbox  
 [![Edit usestate-useeffect](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/09xj95vxl)
+
+## NPM
+
+https://www.npmjs.com/package/react-use-localstorage
 
 ## How to use it
 
