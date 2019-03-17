@@ -69,7 +69,7 @@ Decided to go with @TheAifam5 the following breaking change as the type is deriv
   - Source map has been dropped from distribution
   - distribution is moved from `dist` to `lib` folder
 
-  2.4.1
+    2.4.1
 
 - Added `useLocalStorage` return type explicitly to generate correct `index.d.ts` typing file.
 
