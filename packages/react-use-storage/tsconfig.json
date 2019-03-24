@@ -4,6 +4,8 @@
     "lib": ["dom"],
     "declarationDir": "lib",
     "outDir": "lib",
-    "rootDir": "src"
-  }
+    "rootDir": "src",
+    "types": ["jest", "node", "react", "react-dom"]
+  },
+  "exclude": ["node_modules", "**/*.(spec|test).tsx?$"]
 }
