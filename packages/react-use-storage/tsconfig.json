@@ -7,5 +7,5 @@
     "rootDir": "src",
     "types": ["jest", "node", "react", "react-dom"]
   },
-  "exclude": ["node_modules", "**/*.(spec|test).tsx?$"]
+  "exclude": ["node_modules", "__tests__"]
 }
