@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "lib": ["dom"],
+    "declarationDir": "lib",
+    "outDir": "lib",
+    "rootDir": "src"
+  }
+}
