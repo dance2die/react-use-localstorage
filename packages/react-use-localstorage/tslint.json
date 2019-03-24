@@ -1,6 +1,0 @@
-{
-  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
-  "rules": {
-    "quotemark": [true, "single", "jsx-double"]
-  }
-}

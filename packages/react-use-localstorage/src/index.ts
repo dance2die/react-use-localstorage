@@ -12,7 +12,7 @@ export default function useLocalStorage(
 
   const setItem = (newValue: string) => {
     setValue(newValue);
-    window.localStorage.setItem(key, newValue);
+    localStorage.setItem(key, newValue);
   };
 
   return [item, setItem];
