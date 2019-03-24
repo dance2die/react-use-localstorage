@@ -1,0 +1,33 @@
+{
+  "name": "react-use-storage",
+  "version": "0.0.1-alpha.0",
+  "description": "React Hook for saving objects to Local/Session/Cookie storage",
+  "keywords": [
+    "react",
+    "hooks",
+    "localStorage",
+    "sessionStorage",
+    "cookie"
+  ],
+  "author": "dance2die <sungmkim80@gmail.com>",
+  "homepage": "https://github.com/dance2die/react-use-localstorage/packages/react-use-storage",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dance2die/react-use-localstorage.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/dance2die/react-use-localstorage/issues"
+  }
+}
