@@ -35,8 +35,6 @@ describe("react-use-storage", () => {
         JSON.stringify(oldValue)
       );
 
-      console.log(`result ==>`, result);
-
       act(() => result.current[1](newValue));
       expect(localStorage.__STORE__[key]).toBe(JSON.stringify(newValue));
     });
