@@ -1,6 +1,7 @@
 # `react-use-storage`
 
-> TODO: description
+Just like react-use-localstorage but with objects.
+and also works with sessionStorage.
 
 ## Usage
 
