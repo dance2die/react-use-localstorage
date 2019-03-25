@@ -3,24 +3,25 @@
 import { renderHook, cleanup, act } from "react-hooks-testing-library";
 import useStorage from "../src/index";
 
+const asStorageValue = (value: any) => JSON.stringify(value);
+
 afterEach(cleanup);
+beforeEach(() => {
+  localStorage.clear();
+  sessionStorage.clear();
+});
 
 describe("react-use-storage", () => {
-  beforeEach(() => {
-    localStorage.clear();
-    sessionStorage.clear();
-  });
-
   describe(`localStorage tests`, () => {
     test(`Initially, "useStorage" should save to localStorage`, () => {
-      const [KEY, VALUE] = ["foo", "bar"];
-      const { result } = renderHook(() => useStorage(KEY, VALUE));
+      const [key, value] = ["foo", "bar"];
+      const { result } = renderHook(() => useStorage(key, value));
 
       expect(localStorage.setItem).toHaveBeenLastCalledWith(
-        KEY,
-        JSON.stringify(VALUE)
+        key,
+        asStorageValue(value)
       );
-      expect(localStorage.__STORE__[KEY]).toBe(JSON.stringify(VALUE));
+      expect(localStorage.__STORE__[key]).toBe(asStorageValue(value));
       expect(Object.keys(localStorage.__STORE__).length).toBe(1);
     });
 
@@ -32,11 +33,11 @@ describe("react-use-storage", () => {
       const { result } = renderHook(() => useStorage(key, oldValue));
       expect(localStorage.setItem).toHaveBeenLastCalledWith(
         key,
-        JSON.stringify(oldValue)
+        asStorageValue(oldValue)
       );
 
       act(() => result.current[1](newValue));
-      expect(localStorage.__STORE__[key]).toBe(JSON.stringify(newValue));
+      expect(localStorage.__STORE__[key]).toBe(asStorageValue(newValue));
     });
   });
 });
