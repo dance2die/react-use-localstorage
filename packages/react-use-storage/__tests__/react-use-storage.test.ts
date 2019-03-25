@@ -15,7 +15,7 @@ describe("react-use-storage", () => {
   describe(`localStorage tests`, () => {
     test(`Initially, "useStorage" should save to localStorage`, () => {
       const [key, value] = ["foo", "bar"];
-      const { result } = renderHook(() => useStorage(key, value));
+      const _ = renderHook(() => useStorage(key, value));
 
       expect(localStorage.setItem).toHaveBeenLastCalledWith(
         key,
