@@ -1,6 +1,6 @@
 {
   "name": "react-use-storage",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "React Hook for saving objects to Local/Session/Cookie storage",
   "keywords": [
     "react",
