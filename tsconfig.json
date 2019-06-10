@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "declaration": true,
-    "declarationDir": "lib",
-    "outDir": "lib",
-    "rootDir": "src",
+    "lib": ["dom", "es2015"],
+    "target": "es2015",
     "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "declaration": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
-  "compileOnSave": false,
-  "buildOnSave": false
+  "include": ["src/"],
+  "buildOnSave": false,
+  "compileOnSave": false
 }
