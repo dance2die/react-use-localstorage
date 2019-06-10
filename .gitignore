@@ -1,5 +1,5 @@
 # Output directory
-lib/
+dist/
 
 # Logs
 logs

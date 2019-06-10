@@ -21,6 +21,7 @@
     "build": "bili",
     "prepare": "run-s clean build"
   },
+  "files": ["dist/"],
   "keywords": [
     "localStorage",
     "react",
