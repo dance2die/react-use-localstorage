@@ -41,6 +41,15 @@
         "code",
         "infra"
       ]
+    },
+    {
+      "login": "VitorLuizC",
+      "name": "Vitor Luiz Cavalcanti",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/9027363?v=4",
+      "profile": "http://vitorluizc.github.io",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
