@@ -5,11 +5,11 @@ export default function useLocalStorage(
   initialValue: string = ''
 ): [string, Dispatch<string>] {
   const [value, setValue] = React.useState(
-    () => window.localStorage.getItem(key) || initialValue
+    () => localStorage.getItem(key) || initialValue
   );
 
   React.useEffect(() => {
-    window.localStorage.setItem(key, value);
+    localStorage.setItem(key, value);
   }, [value]);
 
   return [value, setValue];
