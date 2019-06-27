@@ -9,13 +9,16 @@
     "url": "https://github.com/dance2die/react-use-localstorage.git"
   },
   "homepage": "https://github.com/dance2die/react-use-localstorage",
-  "main": "dist/react-use-localstorage.esm.js",
-  "umd:main": "dist/react-use-localstorage.umd.production.js",
-  "module": "dist/react-use-localstorage.esm.js",
   "typings": "dist/index.d.ts",
+  "main": "dist/react-use-localstorage.esm.js",
+  "umd:main": "dist/react-use-localstorage.umd.production.min.js",
+  "module": "dist/react-use-localstorage.esm.js",
+  "cdn": "dist/react-use-localstorage.umd.production.min.js",
+  "unpkg": "dist/react-use-localstorage.umd.production.min.js",
+  "jsdelivr": "dist/react-use-localstorage.umd.production.min.js",
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
+    "start": "tsdx watch --format cjs,esm,umd",
+    "build": "tsdx build --format cjs,esm,umd",
     "test": "tsdx test --env=jsdom",
     "version:alpha": "npm version prerelease --preid=alpha",
     "publish:alpha": "npm publish --tag alpha"
