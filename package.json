@@ -1,6 +1,6 @@
 {
   "name": "react-use-localstorage",
-  "version": "3.1.2-alpha.3",
+  "version": "3.1.2-alpha.8",
   "description": "Use Local Storage with React hooks",
   "author": "Sung Kim <sungmkim80@gmail.com>",
   "license": "MIT",
@@ -9,14 +9,16 @@
     "url": "https://github.com/dance2die/react-use-localstorage.git"
   },
   "homepage": "https://github.com/dance2die/react-use-localstorage",
-  "main": "dist/react-use-localstorage.es.production.js",
+  "main": "dist/react-use-localstorage.esm.js",
   "umd:main": "dist/react-use-localstorage.umd.production.js",
-  "module": "dist/react-use-localstorage.es.production.js",
+  "module": "dist/react-use-localstorage.esm.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --env=jsdom"
+    "test": "tsdx test --env=jsdom",
+    "version:alpha": "npm version prerelease --preid=alpha",
+    "publish:alpha": "npm publish --tag alpha"
   },
   "keywords": [
     "localStorage",
@@ -32,7 +34,7 @@
     "pretty-quick": "^1.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "tsdx": "^0.6.1",
+    "tsdx": "^0.7.2",
     "tslib": "^1.10.0",
     "typescript": "^3.5.1"
   },
