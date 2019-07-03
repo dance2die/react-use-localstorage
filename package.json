@@ -48,6 +48,11 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "jest": {
+    "setupFiles": [
+      "./test/setup.ts"
+    ]
+  },
   "contributors": [
     {
       "name": "lilasquared",
