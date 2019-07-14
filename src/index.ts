@@ -1,16 +1,16 @@
-import React, { Dispatch } from 'react';
+import { Dispatch, SetStateAction, useState, useEffect } from 'react';
 
-export default function useLocalStorage(
+export default function useLocalStorage<S>(
   key: string,
-  initialValue: string = ''
-): [string, Dispatch<string>] {
-  const [value, setValue] = React.useState(
-    () => localStorage.getItem(key) || initialValue
-  );
+  initialState?: S | (() => S)
+): [S, Dispatch<SetStateAction<S>>] {
+  const item = localStorage.getItem(key);
+  const init = (item === null ? initialState : JSON.parse(item)) as S;
+  const [state, setState] = useState(init);
 
-  React.useEffect(() => {
-    localStorage.setItem(key, value);
-  }, [value]);
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(state));
+  }, [state]);
 
-  return [value, setValue];
+  return [state, setState];
 }
