@@ -26,6 +26,7 @@
     "hooks"
   ],
   "devDependencies": {
+    "@testing-library/react-hooks": "^1.1.0",
     "@types/jest": "^24.0.13",
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
@@ -34,6 +35,7 @@
     "pretty-quick": "^1.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
     "tsdx": "^0.7.2",
     "tslib": "^1.10.0",
     "typescript": "^3.5.1"
@@ -45,6 +47,11 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "jest": {
+    "setupFiles": [
+      "./test/setup.ts"
+    ]
   },
   "contributors": [
     {
