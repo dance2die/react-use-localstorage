@@ -56,6 +56,11 @@ ReactDOM.render(<App />, rootElement);
 <details>
 <summary><b>Expand Changelog</b></summary>
 
+3.2.1
+
+The library is covered by test.
+Thank you so much, @SeanMcP~
+
 3.0.0
 
 Decided to go with @TheAifam5 the following breaking change as the type is derived from React type definition.
@@ -69,7 +74,7 @@ Decided to go with @TheAifam5 the following breaking change as the type is deriv
   - Source map has been dropped from distribution
   - distribution is moved from `dist` to `lib` folder
 
-  2.4.1
+    2.4.1
 
 - Added `useLocalStorage` return type explicitly to generate correct `index.d.ts` typing file.
 
