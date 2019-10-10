@@ -20,8 +20,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import useLocalStorage from 'react-use-localstorage';
 
-import './styles.css';
-
 function App() {
   const [item, setItem] = useLocalStorage('name', 'Initial Value');
 
