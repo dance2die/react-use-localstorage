@@ -1,6 +1,6 @@
 # react-use-localstorage
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 
 _depends on stable v16.8.1~_
 
@@ -56,6 +56,11 @@ ReactDOM.render(<App />, rootElement);
 <details>
 <summary><b>Expand Changelog</b></summary>
 
+3.2.1
+
+The library is covered by test.
+Thank you so much, @SeanMcP~
+
 3.0.0
 
 Decided to go with @TheAifam5 the following breaking change as the type is derived from React type definition.
@@ -69,7 +74,7 @@ Decided to go with @TheAifam5 the following breaking change as the type is deriv
   - Source map has been dropped from distribution
   - distribution is moved from `dist` to `lib` folder
 
-  2.4.1
+    2.4.1
 
 - Added `useLocalStorage` return type explicitly to generate correct `index.d.ts` typing file.
 
@@ -118,8 +123,15 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/3036779?v=4" width="100px;" alt="Aaron Roberts"/><br /><sub><b>Aaron Roberts</b></sub>](https://github.com/lilasquared)<br />[🤔](#ideas-lilasquared "Ideas, Planning, & Feedback") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Alilasquared "Bug reports") [💻](https://github.com/dance2die/react-use-localstorage/commits?author=lilasquared "Code") | [<img src="https://avatars1.githubusercontent.com/u/8465237?v=4" width="100px;" alt="Sung Kim"/><br /><sub><b>Sung Kim</b></sub>](https://twitter.com/dance2die)<br />[💻](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Code") [🐛](https://github.com/dance2die/react-use-localstorage/issues?q=author%3Adance2die "Bug reports") [📖](https://github.com/dance2die/react-use-localstorage/commits?author=dance2die "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/2192274?v=4" width="100px;" alt="TheAifam5"/><br /><sub><b>TheAifam5</b></sub>](https://theaifam5.eu/)<br />[🤔](#ideas-TheAifam5 "Ideas, Planning, & Feedback") [💻](https://github.com/dance2die/react-use-localstorage/commits?author=TheAifam5 "Code") [🚇](#infra-TheAifam5 "Infrastructure (Hosting, Build-Tools, etc)") |
-| :---: | :---: | :---: |
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/lilasquared"><img src="https://avatars3.githubusercontent.com/u/3036779?v=4" width="100px;" alt="Aaron Roberts"/><br /><sub><b>Aaron Roberts</b></sub></a><br /><a href="#ideas-lilasquared" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dance2die/react-use-localstorage/issues?q=author%3Alilasquared" title="Bug reports">🐛</a> <a href="https://github.com/dance2die/react-use-localstorage/commits?author=lilasquared" title="Code">💻</a></td>
+    <td align="center"><a href="https://twitter.com/dance2die"><img src="https://avatars1.githubusercontent.com/u/8465237?v=4" width="100px;" alt="Sung Kim"/><br /><sub><b>Sung Kim</b></sub></a><br /><a href="https://github.com/dance2die/react-use-localstorage/commits?author=dance2die" title="Code">💻</a> <a href="https://github.com/dance2die/react-use-localstorage/issues?q=author%3Adance2die" title="Bug reports">🐛</a> <a href="https://github.com/dance2die/react-use-localstorage/commits?author=dance2die" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://theaifam5.eu/"><img src="https://avatars3.githubusercontent.com/u/2192274?v=4" width="100px;" alt="TheAifam5"/><br /><sub><b>TheAifam5</b></sub></a><br /><a href="#ideas-TheAifam5" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dance2die/react-use-localstorage/commits?author=TheAifam5" title="Code">💻</a> <a href="#infra-TheAifam5" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://vitorluizc.github.io"><img src="https://avatars1.githubusercontent.com/u/9027363?v=4" width="100px;" alt="Vitor Luiz Cavalcanti"/><br /><sub><b>Vitor Luiz Cavalcanti</b></sub></a><br /><a href="https://github.com/dance2die/react-use-localstorage/commits?author=VitorLuizC" title="Code">💻</a></td>
+    <td align="center"><a href="https://seanmcp.com"><img src="https://avatars1.githubusercontent.com/u/6360367?v=4" width="100px;" alt="Sean McPherson"/><br /><sub><b>Sean McPherson</b></sub></a><br /><a href="https://github.com/dance2die/react-use-localstorage/commits?author=SeanMcP" title="Tests">⚠️</a> <a href="https://github.com/dance2die/react-use-localstorage/commits?author=SeanMcP" title="Code">💻</a></td>
+  </tr>
+</table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
