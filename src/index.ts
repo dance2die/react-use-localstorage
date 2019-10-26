@@ -12,5 +12,20 @@ export default function useLocalStorage(
     localStorage.setItem(key, value);
   }, [value]);
 
+  const handleStorage = React.useCallback(
+    (event: StorageEvent) => {
+      if (event.key === key && event.newValue !== value) {
+        setValue(event.newValue || initialValue);
+      }
+    },
+    [value]
+  );
+
+  React.useEffect(() => {
+    window.addEventListener('storage', handleStorage);
+
+    return () => window.removeEventListener('storage', handleStorage);
+  }, [handleStorage]);
+
   return [value, setValue];
 }
