@@ -13,7 +13,14 @@ export default function useLocalStorage(
     window.localStorage.setItem(key, newValue);
   };
 
-  const handleStorageChange = useCallback(
+  useEffect(() => {
+    const newValue = window.localStorage.getItem(key);
+    if (value !== newValue) {
+      setValue(newValue || initialValue);
+    }
+  });
+
+  const handleStorage = useCallback(
     (event: StorageEvent) => {
       if (event.key === key && event.newValue !== value) {
         setValue(event.newValue || initialValue);
@@ -23,10 +30,9 @@ export default function useLocalStorage(
   );
 
   useEffect(() => {
-    window.addEventListener('storage', handleStorageChange);
-
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, [handleStorageChange]);
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, [handleStorage]);
 
   return [value, setItem];
 }
