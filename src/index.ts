@@ -1,16 +1,17 @@
-import React, { Dispatch } from 'react';
+import { Dispatch, useState } from 'react';
 
 export default function useLocalStorage(
   key: string,
   initialValue: string = ''
 ): [string, Dispatch<string>] {
-  const [value, setValue] = React.useState(
+  const [value, setValue] = useState(
     () => localStorage.getItem(key) || initialValue
   );
 
-  React.useEffect(() => {
-    localStorage.setItem(key, value);
-  }, [value]);
+  const setItem = (newValue: string) => {
+    setValue(newValue);
+    window.localStorage.setItem(key, newValue);
+  };
 
-  return [value, setValue];
+  return [value, setItem];
 }
