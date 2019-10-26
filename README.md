@@ -56,6 +56,11 @@ ReactDOM.render(<App />, rootElement);
 <details>
 <summary><b>Expand Changelog</b></summary>
 
+3.3.0
+
+Reverted the implementation of `setValue` to set `localStorage` value directly, instead of depending on `useEffect`.  
+Reference: window.localstorage updated after value managed by useLocalStorage #29
+
 3.2.1
 
 The library is covered by test.
