@@ -18,7 +18,8 @@
     "build": "tsdx build",
     "test": "tsdx test --env=jsdom",
     "version:alpha": "npm version prerelease --preid=alpha",
-    "publish:alpha": "npm publish --tag alpha"
+    "publish:alpha": "npm publish --tag alpha",
+    "prepublishOnly": "tsdx build"
   },
   "keywords": [
     "localStorage",
