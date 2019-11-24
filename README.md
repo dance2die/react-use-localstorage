@@ -1,6 +1,6 @@
 # react-use-localstorage
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 _depends on stable v16.8.1~_
 
@@ -142,6 +142,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/all-contri
     <td align="center"><a href="https://theaifam5.eu/"><img src="https://avatars3.githubusercontent.com/u/2192274?v=4" width="100px;" alt="TheAifam5"/><br /><sub><b>TheAifam5</b></sub></a><br /><a href="#ideas-TheAifam5" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/dance2die/react-use-localstorage/commits?author=TheAifam5" title="Code">💻</a> <a href="#infra-TheAifam5" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="http://vitorluizc.github.io"><img src="https://avatars1.githubusercontent.com/u/9027363?v=4" width="100px;" alt="Vitor Luiz Cavalcanti"/><br /><sub><b>Vitor Luiz Cavalcanti</b></sub></a><br /><a href="https://github.com/dance2die/react-use-localstorage/commits?author=VitorLuizC" title="Code">💻</a></td>
     <td align="center"><a href="https://seanmcp.com"><img src="https://avatars1.githubusercontent.com/u/6360367?v=4" width="100px;" alt="Sean McPherson"/><br /><sub><b>Sean McPherson</b></sub></a><br /><a href="https://github.com/dance2die/react-use-localstorage/commits?author=SeanMcP" title="Tests">⚠️</a> <a href="https://github.com/dance2die/react-use-localstorage/commits?author=SeanMcP" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.geekality.net"><img src="https://avatars1.githubusercontent.com/u/142162?v=4" width="100px;" alt="Torleif Berger"/><br /><sub><b>Torleif Berger</b></sub></a><br /><a href="#review-Svish" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
