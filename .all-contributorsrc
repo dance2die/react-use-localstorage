@@ -60,6 +60,15 @@
         "test",
         "code"
       ]
+    },
+    {
+      "login": "Svish",
+      "name": "Torleif Berger",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/142162?v=4",
+      "profile": "https://www.geekality.net",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7
