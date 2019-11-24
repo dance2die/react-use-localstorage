@@ -56,6 +56,13 @@ ReactDOM.render(<App />, rootElement);
 <details>
 <summary><b>Expand Changelog</b></summary>
 
+3.4.0
+
+This version "Watch changes on storage and change state".  
+Reference: https://github.com/dance2die/react-use-localstorage/pull/30
+
+Thank you @VitorLuizC for the PR and @Svish for the review.
+
 3.3.0
 
 Reverted the implementation of `setValue` to set `localStorage` value directly, instead of depending on `useEffect`.  
