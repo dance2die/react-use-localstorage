@@ -47,6 +47,23 @@ const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
 ```
 
+### Note for SSR (server-side rendering)
+
+If you are using Gatsby or other SSR frameworks, such as Next.js, refer to [this workaround](https://github.com/dance2die/react-use-localstorage/issues/24#issuecomment-581479939) by @hencatsmith.
+
+You need to make sure that `window` is available.
+
+```js
+const useSsrLocalStorage = (
+  key: string,
+  initial: string
+): [string, React.Dispatch<string>] => {
+  return typeof window === 'undefined'
+    ? [initial, (value: string) => undefined]
+    : useLocalStorage(key, initial);
+};
+```
+
 ## Demo
 
 ![demo](https://github.com/dance2die/react-use-localstorage/raw/master/react-use-localstorage.gif)
