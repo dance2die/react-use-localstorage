@@ -69,7 +69,18 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "evgenymarkov",
+      "name": "Evgeny Markov",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/16443248?v=4",
+      "profile": "https://github.com/evgenymarkov",
+      "contributions": [
+        "bug",
+        "ideas"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }
