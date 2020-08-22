@@ -1,6 +1,6 @@
 {
   "name": "react-use-localstorage",
-  "version": "3.5.2",
+  "version": "3.5.3",
   "description": "Use Local Storage with React hooks",
   "author": "Sung Kim <sungmkim80@gmail.com>",
   "license": "MIT",
