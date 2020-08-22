@@ -10,7 +10,7 @@ _depends on stable v16.8.1~_
 
 Access [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) using [React hooks](https://reactjs.org/docs/hooks-intro.html).
 
-Fork it on CodeSandbox
+Fork it on CodeSandbox  
 [![Edit usestate-useeffect](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/09xj95vxl)
 
 ## How to use it
@@ -35,7 +35,7 @@ function App() {
             type="text"
             placeholder="Enter your name"
             value={item}
-            onChange={e => setItem(e.target.value)}
+            onChange={(e) => setItem(e.target.value)}
           />
         </label>
       </div>
