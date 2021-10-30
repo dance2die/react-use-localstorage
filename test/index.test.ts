@@ -46,3 +46,32 @@ describe('useLocalStorage', (): void => {
     expect(localStorage.getItem(KEY)).toBe(VALUE.CHANGED);
   });
 });
+
+describe('useLocalStorage with object', (): void => {
+  const KEY = 'key';
+  const VALUE = {
+    INITIAL: { key1: 'value1' },
+    CHANGED: { key1: 'value1', key2: 'value2' },
+    NONE: '',
+  };
+
+  describe('Setup', () => {
+    it('Returns initial object value', () => {
+      localStorage.removeItem(KEY);
+      const { result } = renderHook(() => useLocalStorage(KEY, VALUE.INITIAL));
+      expect(result.current[0]).toEqual(VALUE.INITIAL);
+    });
+
+    it('When no initial object value is passed, returns an empty string', () => {
+      localStorage.removeItem(KEY);
+      const { result } = renderHook(() => useLocalStorage(KEY));
+      expect(result.current[0]).toEqual(VALUE.NONE);
+    });
+
+    it('Returns setValue function for object', () => {
+      localStorage.removeItem(KEY);
+      const { result } = renderHook(() => useLocalStorage(KEY, VALUE.INITIAL));
+      expect(typeof result.current[1]).toMatch('function');
+    });
+  });
+});

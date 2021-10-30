@@ -1,20 +1,28 @@
 import { Dispatch, useCallback, useEffect, useState } from 'react';
 
+function getValueFromLocalStorage(key: string) {
+  const value = window.localStorage.getItem(key);
+  return value ? (value.startsWith('{') ? JSON.parse(value) : value) : null;
+}
+
 export default function useLocalStorage(
   key: string,
-  initialValue: string = ''
-): [string, Dispatch<string>] {
-  const [value, setValue] = useState(
-    () => window.localStorage.getItem(key) || initialValue
+  initialValue: string | object = ''
+): [string | object, Dispatch<string | object>] {
+  const [value, setValue] = useState<string | object>(
+    () => getValueFromLocalStorage(key) || initialValue
   );
 
-  const setItem = (newValue: string) => {
+  const setItem = (newValue: string | object) => {
     setValue(newValue);
-    window.localStorage.setItem(key, newValue);
+    window.localStorage.setItem(
+      key,
+      typeof newValue === 'string' ? newValue : JSON.stringify(newValue)
+    );
   };
 
   useEffect(() => {
-    const newValue = window.localStorage.getItem(key);
+    const newValue = getValueFromLocalStorage(key);
     if (value !== newValue) {
       setValue(newValue || initialValue);
     }
