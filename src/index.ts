@@ -1,37 +1,51 @@
 import { Dispatch, useCallback, useEffect, useState } from 'react';
+import { isEqual } from 'lodash';
+
+function parseValue(value: string | null) {
+  if (value) {
+    try {
+      return JSON.parse(value);
+    } catch (e) {
+      return value;
+    }
+  }
+  return null;
+}
 
 function getValueFromLocalStorage(key: string) {
-  const value = window.localStorage.getItem(key);
-  return value ? (value.startsWith('{') ? JSON.parse(value) : value) : null;
+  return parseValue(window.localStorage.getItem(key));
 }
+
+type T = string | object;
 
 export default function useLocalStorage(
   key: string,
-  initialValue: string | object = ''
-): [string | object, Dispatch<string | object>] {
-  const [value, setValue] = useState<string | object>(
+  initialValue: T = ''
+): [T, Dispatch<T>] {
+  const [value, setValue] = useState<T>(
     () => getValueFromLocalStorage(key) || initialValue
   );
 
-  const setItem = (newValue: string | object) => {
+  const setItem = (newValue: T) => {
     setValue(newValue);
     window.localStorage.setItem(
       key,
-      typeof newValue === 'string' ? newValue : JSON.stringify(newValue)
+      typeof newValue === 'object' ? JSON.stringify(newValue) : newValue
     );
   };
 
   useEffect(() => {
     const newValue = getValueFromLocalStorage(key);
-    if (value !== newValue) {
+    if (!isEqual(value, newValue)) {
       setValue(newValue || initialValue);
     }
   });
 
   const handleStorage = useCallback(
     (event: StorageEvent) => {
-      if (event.key === key && event.newValue !== value) {
-        setValue(event.newValue || initialValue);
+      const newValue = parseValue(event.newValue);
+      if (event.key === key && !isEqual(newValue, value)) {
+        setValue(newValue || initialValue);
       }
     },
     [value]
