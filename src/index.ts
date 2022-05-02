@@ -9,20 +9,35 @@ export default function useLocalStorage(
   );
 
   const setItem = (newValue: string) => {
+    const se = new StorageEvent('storage', {
+      bubbles: false,
+      cancelable: false,
+      key,
+      newValue,
+      oldValue: value,
+      storageArea: window.localStorage,
+      url: location.href,
+    });
+    window.dispatchEvent(se);
+
     setValue(newValue);
     window.localStorage.setItem(key, newValue);
   };
 
-  useEffect(() => {
-    const newValue = window.localStorage.getItem(key);
-    if (value !== newValue) {
-      setValue(newValue || initialValue);
-    }
-  });
+  // useEffect(() => {
+  //   const newValue = window.localStorage.getItem(key);
+  //   if (value !== newValue) {
+  //     setValue(newValue || initialValue);
+  //   }
+  // });
 
   const handleStorage = useCallback(
     (event: StorageEvent) => {
-      if (event.key === key && event.newValue !== value) {
+      if (
+        event.storageArea === window.localStorage &&
+        event.key === key &&
+        event.newValue !== value
+      ) {
         setValue(event.newValue || initialValue);
       }
     },
